@@ -1,0 +1,4 @@
+<Files Magento2ConnectorConfig.php>
+    order deny,allow
+    deny from all
+</Files>

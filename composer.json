@@ -1,0 +1,19 @@
+{
+    "name": "Divante/Magento2Connector",
+    "type": "pimcore-plugin",
+    "require": {
+        "pimcore/installer-plugin": ">=1",
+        "divante/magento2-rest-api-client": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magento2Connector\\": "lib"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DivanteLtd/php-magento2-swagger"
+        }
+    ]
+}
