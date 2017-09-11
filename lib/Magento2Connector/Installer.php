@@ -29,8 +29,14 @@ class Installer
     {
         if (!is_file(PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector/Magento2ConnectorConfig.php")) {
             mkdir(PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector", 0777, true);
-            copy(PIMCORE_PLUGINS_PATH . "/Magento2Connector/config/Magento2ConnectorConfigSample.php", PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector/Magento2ConnectorConfig.php");
-            copy(PIMCORE_PLUGINS_PATH . "/Magento2Connector/config/.htaccess", PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector/.htaccess");
+            copy(
+                PIMCORE_PLUGINS_PATH . "/Magento2Connector/config/Magento2ConnectorConfigSample.php",
+                PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector/Magento2ConnectorConfig.php"
+            );
+            copy(
+                PIMCORE_PLUGINS_PATH . "/Magento2Connector/config/.htaccess",
+                PIMCORE_WEBSITE_PATH . "/var/plugins/Magento2Connector/.htaccess"
+            );
         }
     }
 }

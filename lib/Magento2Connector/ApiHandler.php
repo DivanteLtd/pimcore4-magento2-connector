@@ -55,7 +55,7 @@ class ApiHandler
         } catch (ListenerNotFoundException $listenerNotFoundException) {
             $apiLogger->info(
                 sprintf(
-                    "There is no handler for object type %s.   Register listener for this case.",
+                    "There is no handler for object type %s. Register listener for this case.",
                     get_class($target)
                 )
             );
