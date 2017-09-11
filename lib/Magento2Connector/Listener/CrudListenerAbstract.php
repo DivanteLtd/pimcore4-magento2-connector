@@ -3,7 +3,7 @@
  * @category    Magento2Connector
  * @date        10/08/2017 07:27
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Listener;
@@ -72,5 +72,5 @@ abstract class CrudListenerAbstract implements CrudListenerInterface
      * @param mixed $requestBody
      * @return mixed
      */
-    protected abstract function createOrUpdate($isCreated, AbstractObject $target, $requestBody);
+    abstract protected function createOrUpdate($isCreated, AbstractObject $target, $requestBody);
 }

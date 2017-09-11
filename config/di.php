@@ -3,7 +3,7 @@
  * @category    Magento2Connector
  * @date        14/06/2017 09:25
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 use function DI\factory;
@@ -16,7 +16,6 @@ try {
     $password      = $ConfigService->get('password');
     $host          = $ConfigService->get('host');
 } catch (Exception $e) {
-
 }
 
 return [
@@ -26,13 +25,16 @@ return [
     'magento2.event_manager' => factory([\Pimcore::class, 'getEventManager']),
     'magento2.api.client.configuration' => object(\Swagger\Magento2Client\Configuration::class)
         ->method(
-            'setUsername', $userName
+            'setUsername',
+            $userName
         )
         ->method(
-            'setPassword', $password
+            'setPassword',
+            $password
         )
         ->method(
-            'setHost', $host
+            'setHost',
+            $host
         ),
 
     'magento2.api.client'                    => object(\Swagger\Magento2Client\ApiClient::class)

@@ -4,12 +4,12 @@
  * @date        14/06/2017 09:25
  * @author      Kamil Wręczycki <kwreczycki@divante.pl>
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Listener;
 
-use Magento2Connector\Swagger\ApiFactory;
+ use Magento2Connector\Swagger\ApiFactory;
 use Pimcore\Model\Object\AbstractObject;
 use Pimcore\Model\Object\Category;
 use Pimcore\Model\Object\Product;
@@ -24,7 +24,7 @@ class ListenerFactory
      * @param AbstractObject $abstractObject
      * @return CrudListenerInterface
      */
-    public static function getFactory(AbstractObject $abstractObject)
+    public static function getListener(AbstractObject $abstractObject)
     {
         $apiFactory = new ApiFactory();
         $diContainer = \Pimcore::getDiContainer();
@@ -51,4 +51,3 @@ class ListenerFactory
         }
     }
 }
-

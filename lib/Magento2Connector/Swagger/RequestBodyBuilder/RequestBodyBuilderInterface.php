@@ -3,7 +3,7 @@
  * @category    Magento2Connector
  * @date        10/08/2017 08:38
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Swagger\RequestBodyBuilder;

@@ -3,7 +3,7 @@
  * @category    Magento2Connector
  * @date        11/08/2017 06:01
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Mapper\Helper;
