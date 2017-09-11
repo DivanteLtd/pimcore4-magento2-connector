@@ -1,0 +1,11 @@
+language: php
+php:
+  - '5.6'
+
+before_script: composer install
+script:
+  - vendor/bin/phpcs -s --colors --standard=PSR2 --ignore=*/Tests/* lib/
+  - vendor/bin/phpmd lib/ text codesize
+  - vendor/bin/phpcpd lib/
+  - vendor/bin/phpdoccheck --directory=lib
+
