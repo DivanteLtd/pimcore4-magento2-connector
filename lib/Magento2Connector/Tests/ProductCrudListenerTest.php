@@ -1,4 +1,11 @@
 <?php
+/**
+ * @category    Magento2Connector
+ * @date        14/06/2017 09:25
+ * @author      Kamil Wręczycki <kwreczycki@divante.pl>
+ * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
+ * @copyright   2017 Divante Ltd. (https://divante.co)
+ */
 
 namespace Magento2Connector\Tests;
 
@@ -10,7 +17,12 @@ use Mockery\Mock;
 use Pimcore\Log\ApplicationLogger;
 use Swagger\Magento2Client\Api\CatalogProductRepositoryV1Api;
 
-class ProductCrudListenerTest extends MockeryTestCase {
+/**
+ * Class ProductCrudListenerTest
+ * @package Magento2Connector\Tests
+ */
+class ProductCrudListenerTest extends MockeryTestCase
+{
     /** @test */
     public function it_should_send_delete_request()
     {

@@ -4,7 +4,7 @@
  * @date        14/06/2017 09:25
  * @author      Kamil Wręczycki <kwreczycki@divante.pl>
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector;
@@ -26,6 +26,7 @@ class ApiHandler
 
     /**
      * @param GenericEvent $event
+     * @return void
      */
     public static function registerApiHandler(GenericEvent $event)
     {
@@ -37,13 +38,13 @@ class ApiHandler
             $target = $event->getTarget();
 
             /** @var CrudListenerInterface $listener */
-            $listener = ListenerFactory::getFactory($target);
+            $listener = ListenerFactory::getListener($target);
 
-            if($listener === null) {
+            if ($listener === null) {
                 return;
             }
 
-            switch($event->getName()) {
+            switch ($event->getName()) {
                 case self::POST_UPDATE:
                     $listener->onPostUpdate($event);
                     break;
@@ -51,11 +52,14 @@ class ApiHandler
                     $listener->onPostDelete($event);
                     break;
             }
-        }
-        catch (ListenerNotFoundException $listenerNotFoundException) {
-            $apiLogger->info(sprintf("There is no handler for object type %s.   Register listener for this case.", get_class($target)));
-        }
-        catch (\RuntimeException $runtimeException) {
+        } catch (ListenerNotFoundException $listenerNotFoundException) {
+            $apiLogger->info(
+                sprintf(
+                    "There is no handler for object type %s. Register listener for this case.",
+                    get_class($target)
+                )
+            );
+        } catch (\RuntimeException $runtimeException) {
             self::throwValidationException($runtimeException);
         }
     }

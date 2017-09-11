@@ -3,7 +3,7 @@
  * @category    Magento2Connector
  * @date        09/08/2017 10:51
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Listener\Helper;
@@ -18,6 +18,6 @@ class ListenerHelper
      */
     public static function shouldBeSendToMagento(AbstractObject $object)
     {
-         return (bool)$object->getPublished();
+        return (bool)$object->getPublished();
     }
 }

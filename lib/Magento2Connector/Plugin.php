@@ -4,7 +4,7 @@
  * @date        14/06/2017 09:25
  * @author      Kamil Wręczycki <kwreczycki@divante.pl>
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector;
@@ -60,8 +60,14 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
      */
     protected function registerListeners()
     {
-        \Pimcore::getEventManager()->attach('object.postUpdate', ["Magento2Connector\\ApiHandler", "registerApiHandler"]);
-        \Pimcore::getEventManager()->attach('object.postDelete', ["Magento2Connector\\ApiHandler", "registerApiHandler"]);
+        \Pimcore::getEventManager()->attach(
+            ApiHandler::POST_UPDATE,
+            ["Magento2Connector\\ApiHandler", "registerApiHandler"]
+        );
+        \Pimcore::getEventManager()->attach(
+            ApiHandler::POST_DELETE,
+            ["Magento2Connector\\ApiHandler", "registerApiHandler"]
+        );
     }
 
     /**
@@ -100,4 +106,3 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
         return false;
     }
 }
-

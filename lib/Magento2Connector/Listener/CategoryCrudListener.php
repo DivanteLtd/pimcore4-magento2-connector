@@ -4,7 +4,7 @@
  * @date        14/06/2017 09:25
  * @author      Kamil Wręczycki <kwreczycki@divante.pl>
  * @author      Bartosz Idzikowski <bidzikowski@divante.pl>
- * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
+ * @copyright   2017 Divante Ltd. (https://divante.co)
  */
 
 namespace Magento2Connector\Listener;
@@ -60,7 +60,7 @@ class CategoryCrudListener extends CrudListenerAbstract
      * @param Body30 $categoryBody
      * @return void
      */
-    protected function createOrUpdate($isCreated = null, AbstractObject $category, $categoryBody)
+    protected function createOrUpdate($isCreated, AbstractObject $category, $categoryBody)
     {
         /** @var Category $category */
         if (empty($category->getMagentoId())) {
@@ -79,4 +79,3 @@ class CategoryCrudListener extends CrudListenerAbstract
         }
     }
 }
-
