@@ -48,11 +48,11 @@ Follow [Configuration tab](#configuration)
 CMS - Expand your Magento store with powerful CMS
 ![CMS](https://user-images.githubusercontent.com/17312052/30380994-7551a0bc-989b-11e7-9721-ca839cb8d176.png)
 
-Landing Pages - Generate landing pages, forms and content pages in a flash
-![Landing Pages](https://user-images.githubusercontent.com/17312052/30380996-75541194-989b-11e7-93c4-2cff41080d0c.png)
-
 PIM - Manage product information, translations, photos etc. with the best PIM software on the market
 ![PIM](https://user-images.githubusercontent.com/17312052/30380995-7551d23a-989b-11e7-9994-da62469a82bb.png)
+
+Landing Pages - Generate landing pages, forms and content pages in a flash
+![Landing Pages](https://user-images.githubusercontent.com/17312052/30380996-75541194-989b-11e7-93c4-2cff41080d0c.png)
 
 Tell a Story - Create a Storytelling about your brand and products
 ![Tell a Story!](https://user-images.githubusercontent.com/17312052/30380998-7556c402-989b-11e7-9a70-f6ce077b4a4c.png)
