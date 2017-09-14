@@ -14,14 +14,6 @@ Magento2-connector is a plugin which allows to add, remove and modify Magento pr
 	- [Standards & Code Quality](#)
 	- [About Authors](#)
 
-## Screenshots
-![CMS](https://user-images.githubusercontent.com/17312052/30380994-7551a0bc-989b-11e7-9721-ca839cb8d176.png)
-![PIM](https://user-images.githubusercontent.com/17312052/30380995-7551d23a-989b-11e7-9994-da62469a82bb.png)
-![Landing Pages](https://user-images.githubusercontent.com/17312052/30380996-75541194-989b-11e7-93c4-2cff41080d0c.png)
-![Tell a Story!](https://user-images.githubusercontent.com/17312052/30380998-7556c402-989b-11e7-9a70-f6ce077b4a4c.png)
-![Transfer All Data](https://user-images.githubusercontent.com/17312052/30380997-75562718-989b-11e7-9c2b-dd1c7d86c1ec.png)
-![Omnichannel](https://user-images.githubusercontent.com/17312052/30380999-7556c5a6-989b-11e7-8ba5-68e7669494fd.png)
-
 ## Compatibility
 This module is compatible with Magento >= 2.0 and Pimcore >= 4.2
 
@@ -54,16 +46,24 @@ Follow [Configuration tab](#configuration)
 
 ## Key Features
 CMS - Expand your Magento store with powerful CMS
-
-PIM - Manage product information, translations, photos etc. with the best PIM software on the market
+![CMS](https://user-images.githubusercontent.com/17312052/30380994-7551a0bc-989b-11e7-9721-ca839cb8d176.png)
 
 Landing Pages - Generate landing pages, forms and content pages in a flash
+![Landing Pages](https://user-images.githubusercontent.com/17312052/30380996-75541194-989b-11e7-93c4-2cff41080d0c.png)
+
+PIM - Manage product information, translations, photos etc. with the best PIM software on the market
+![PIM](https://user-images.githubusercontent.com/17312052/30380995-7551d23a-989b-11e7-9994-da62469a82bb.png)
 
 Tell a Story - Create a Storytelling about your brand and products
+![Tell a Story!](https://user-images.githubusercontent.com/17312052/30380998-7556c402-989b-11e7-9a70-f6ce077b4a4c.png)
 
 Transfer All Data - Transfer all data types between systems - products, attributes, categories, customers, orders
+![Transfer All Data](https://user-images.githubusercontent.com/17312052/30380997-75562718-989b-11e7-9c2b-dd1c7d86c1ec.png)
 
 Omnichannel - Create a powerful Omnichannel solution
+![Omnichannel](https://user-images.githubusercontent.com/17312052/30380999-7556c5a6-989b-11e7-8ba5-68e7669494fd.png)
+
+More about this Magento 2 connector on this website.
 
 ## Configuration
 Fill ```website/var/plugins/Magento2Connector/Magento2ConnectorConfig.php``` with credentials to Magento API.
