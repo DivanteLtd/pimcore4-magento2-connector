@@ -9,13 +9,12 @@ Magento2-connector is a plugin which allows to add, remove and modify Magento pr
 	- [Installing/Getting started](#installinggetting-started)
 	- [Features](#features)
 	- [Configuration](#configuration)
-	- [Contributing](#)
-	- [Licensing](#)
-	- [Standards & Code Quality](#)
-	- [About Authors](#)
+	- [Contributing](#contributing)
+	- [Standards & Code Quality](#standards-code-quality)
+	- [About Authors](#about-authors)
 
 ## Compatibility
-This module is compatible with Magento >= 2.0 and Pimcore >= 4.2
+This module is compatible with Magento >= 2.0 and Pimcore 4.* >= 4.2
 
 ## Requirements
 This plugin requires following php extensions:
@@ -27,17 +26,17 @@ In Magento you need to have attributes set with id: 4.
 In Pimcore you need to have classes Product and Category with following attributes:
 
 Product:
- * Sku
- * Name
- * Price
- * Weight
- * Description
- * ShortDescription
- * Categories (array of category Ids)
+ * Sku (text type)
+ * Name (text type)
+ * Price (float type)
+ * Weight (float type)
+ * Description (text type)
+ * ShortDescription (text type)
+ * Categories (multihref)
 
 Category:
- * ParentId
- * Name 
+ * Name (text type)
+ * MagentoId (integer type)
  
 ## Installing/Getting started
 Download this repository as .zip file.
@@ -72,9 +71,7 @@ Fill ```website/var/plugins/Magento2Connector/Magento2ConnectorConfig.php``` wit
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
 ## Standards & Code Quality
-*Which standards and code quality rules this code respects?*
-
-This module respects all Magento2 code quality rules and our own PHPCS and PHPMD rulesets.
+This module respects our own PHPCS and PHPMD rulesets.
 
 ## About Authors
 
