@@ -63,7 +63,7 @@ Transfer All Data - Transfer all data types between systems - products, attribut
 Omnichannel - Create a powerful Omnichannel solution
 ![Omnichannel](https://user-images.githubusercontent.com/17312052/30380999-7556c5a6-989b-11e7-8ba5-68e7669494fd.png)
 
-More about this Magento 2 connector on this website.
+More about this Magento 2 connector [on this website](https://divante.co/pimcore-magento/).
 
 ## Configuration
 Fill ```website/var/plugins/Magento2Connector/Magento2ConnectorConfig.php``` with credentials to Magento API.
