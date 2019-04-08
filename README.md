@@ -1,83 +1,18 @@
 # Magento 2 connector
 
-Magento2-connector is a plugin which allows to add, remove and modify Magento products and categories directly from Pimcore panel. 
-**Table of Contents**
-
-- [Magento 2 connector](#magento-2-connector)
-	- [Compatibility](#compatibility)
-	- [Requirements](#requirements)
-	- [Installing/Getting started](#installinggetting-started)
-	- [Features](#features)
-	- [Configuration](#configuration)
-	- [Contributing](#contributing)
-	- [Standards & Code Quality](#standards-code-quality)
-	- [About Authors](#about-authors)
-
-## Compatibility
-This module is compatible with Magento >= 2.0 and Pimcore 4.* >= 4.2
-
-## Requirements
-This plugin requires following php extensions:
- * php-curl
- * php-mbstring
- 
-In Magento you need to have attributes set with id: 4.
-
-In Pimcore you need to have classes Product and Category with following attributes:
-
-Product:
- * Sku (text type)
- * Name (text type)
- * Price (float type)
- * Weight (float type)
- * Description (text type)
- * ShortDescription (text type)
- * Categories (multihref)
-
-Category:
- * Name (text type)
- * MagentoId (integer type)
- 
-## Installing/Getting started
-Download this repository as .zip file.
-In Pimcore panel select Extensions and Upload Plugin (ZIP) and click Install and Enable.
-Follow [Configuration tab](#configuration)
-
-## Key Features
-CMS - Expand your Magento store with powerful CMS
-![CMS](https://user-images.githubusercontent.com/17312052/30380994-7551a0bc-989b-11e7-9721-ca839cb8d176.png)
-
-PIM - Manage product information, translations, photos etc. with the best PIM software on the market
-![PIM](https://user-images.githubusercontent.com/17312052/30380995-7551d23a-989b-11e7-9994-da62469a82bb.png)
-
-Landing Pages - Generate landing pages, forms and content pages in a flash
-![Landing Pages](https://user-images.githubusercontent.com/17312052/30380996-75541194-989b-11e7-93c4-2cff41080d0c.png)
-
-Tell a Story - Create a Storytelling about your brand and products
-![Tell a Story!](https://user-images.githubusercontent.com/17312052/30380998-7556c402-989b-11e7-9a70-f6ce077b4a4c.png)
-
-Transfer All Data - Transfer all data types between systems - products, attributes, categories, customers, orders
-![Transfer All Data](https://user-images.githubusercontent.com/17312052/30380997-75562718-989b-11e7-9c2b-dd1c7d86c1ec.png)
-
-Omnichannel - Create a powerful Omnichannel solution
-![Omnichannel](https://user-images.githubusercontent.com/17312052/30380999-7556c5a6-989b-11e7-8ba5-68e7669494fd.png)
-
-More about this Magento 2 connector [on this website](https://divante.co/pimcore-magento/).
-
-## Configuration
-Fill ```website/var/plugins/Magento2Connector/Magento2ConnectorConfig.php``` with credentials to Magento API.
-
-## Contributing
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
-## Standards & Code Quality
-This module respects our own PHPCS and PHPMD rulesets.
-
-## About Authors
+This modules is no longer supported. Please visit https://go.divante.co/pimcore-magento/ for the newest information. 
 
 
-![Divante-logo](http://divante.co/wp-content/uploads/2017/07/divante-logo.png "Divante")
+## <a name="authors"></a>About the Author
 
-Founded in 2008 in Poland, Divante delivers high-quality e-business solutions. They support their clients in creating customized Omnichannel and eCommerce platforms, with expertise in CRM, ERP, PIM, custom web applications, and Big Data solutions. With 180 employees on board, Divante provides software expertise and user-experience design. Their team assists companies in their development and optimization of new sales channels by implementing eCommerce solutions, integrating systems, and designing and launching marketing campaigns.
+This module has been created by Divante eCommerce Software House.
 
-Visit our website [Divante.co](https://divante.co/ "Divante.co") for more information.
+![Divante-logo](http://divante.co/logo-HG.png "Divante")
+
+Divante is an expert in providing top-notch eCommerce solutions and products for both B2B and B2C segments. Our core competencies are built around Magento, Pimcore and bespoke software projects (we love Symfony3, Node.js, Angular, React, Vue.js). We specialize in sophisticated integration projects trying to connect hardcore IT with good product design and UX.
+
+We work with industry leaders, like T-Mobile, Continental, and 3M, who perceive technology as their key component to success. In Divante, we trust in cooperation, that's why we contribute to open source products and create our own products like [Open Loyalty](http://www.openloyalty.io/ "Open Loyalty") and [Vue Storefront](https://github.com/DivanteLtd/vue-storefront "Vue Storefront").
+
+Divante is part of the OEX Group which is listed on the Warsaw Stock Exchange. Our annual revenue has been growing at a minimum of about 30% year on year.
+
+For more information please visit [Divante.co](https://divante.co/ "Divante.co").
