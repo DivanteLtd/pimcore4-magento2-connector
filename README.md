@@ -1,6 +1,12 @@
 # Magento 2 connector
 
-This modules is no longer supported. Please visit https://go.divante.co/pimcore-magento/ for the newest information. 
+⛔️⛔️⛔️
+
+### This modules **is no longer supported**. Please visit https://go.divante.co/pimcore-magento/ for the newest information. 
+
+⛔️⛔️⛔️
+
+
 
 
 ## <a name="authors"></a>About the Author
